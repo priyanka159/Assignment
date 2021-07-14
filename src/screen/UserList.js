@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FlatList, Text, View, Image} from 'react-native';
+import {FlatList, Text, View, Image, StyleSheet} from 'react-native';
 import axios from 'axios';
 export class UserList extends Component {
   constructor(props) {
@@ -51,3 +51,4 @@ export class UserList extends Component {
 }
 
 export default UserList;
+const styles = StyleSheet.create({});

@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
-import {Text, View, TouchableOpacity, TextInput} from 'react-native';
+import {
+  Text,
+  View,
+  TouchableOpacity,
+  TextInput,
+  StyleSheet,
+} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 export class RegisterScreen extends Component {
@@ -108,3 +114,4 @@ export class RegisterScreen extends Component {
 }
 
 export default RegisterScreen;
+const styles = StyleSheet.create({});

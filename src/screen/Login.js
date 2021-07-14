@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity, TextInput} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  TextInput,
+  StyleSheet,
+} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 
@@ -19,22 +25,20 @@ class LoginScreen extends Component {
     };
     console.log(formData, 'see');
     axios
-      .post(`/https://reqres.in/api/login`, formData)
+      .post(`https://reqres.in/api/login`, formData)
       .then(res => {
         console.log(res.data, 'see');
         if (this.state.email != '' && this.state.password != '') {
           if (res.data.status === '200') {
             const token = response.data.token;
             AsyncStorage.setItem('token', token);
-
-            this.props.navigation.navigate('UserList');
           }
         } else {
           console.log('missing password');
         }
       })
       .catch(err => {
-        console.log(err, 'ERR');
+        console.log('ERR', err);
       });
   };
   render() {
@@ -77,6 +81,7 @@ class LoginScreen extends Component {
           <TouchableOpacity
             onPress={() => {
               this.handleLogin();
+              this.props.navigation.navigate('UserList');
             }}
             style={{
               height: 40,
@@ -102,3 +107,6 @@ class LoginScreen extends Component {
 }
 
 export default LoginScreen;
+const styles = StyleSheet.create({
+  container: {},
+});
