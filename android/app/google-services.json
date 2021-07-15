@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "358687228570",
+    "project_id": "fir-fd7fe",
+    "storage_bucket": "fir-fd7fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358687228570:android:e4041ddc843439d5665523",
+        "android_client_info": {
+          "package_name": "com.priyanka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358687228570-btpqd5uiv26p8ll65j88285da9im8v6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXRKPyUGwLLA7OG5VGjJkWx2czJMA9Kt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358687228570-btpqd5uiv26p8ll65j88285da9im8v6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
